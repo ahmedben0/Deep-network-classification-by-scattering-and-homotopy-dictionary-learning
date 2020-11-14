@@ -1,0 +1,85 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[english]{babel}   %    
+\usepackage[T1]{fontenc}
+\usepackage[autolanguage]{numprint}
+\usepackage{color}
+
+
+\usepackage{hyperref}
+\usepackage{listings}
+
+\usepackage{tabto}
+\usepackage{array}
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{url}
+\usepackage{wrapfig}
+
+\usepackage{amssymb}
+
+\usepackage{caption}
+
+\definecolor{backcolour}{rgb}{0.97,0.95,0.93}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+}
+
+\author{\Large \textsc{\href{mailto:ahmed.benaissa@supelec.fr}{Ahmed Ben Aissa} - \href{mailto:elie.mokbel@supelec.fr}{Elie Mokbel} - \href{mailto:mohammed.fellaji@supelec.fr}{Mohammed Fellaji}}}
+\date{\today}
+
+\begin{document}
+
+\hypersetup{pdfborder=0 0 0} 		%pour enlever le cadre rouge dans la tables des matières
+
+
+\makeatletter
+  \begin{titlepage}
+  \centering
+     {\large \textsc{   }}\\
+    \centering
+      \includegraphics[width=1 \textwidth]{figures/logo.png} \\
+    \vspace{3cm}
+      {\LARGE\textbf{Deep network classification by scattering and homotopy dictionary learning}\\
+    \vspace{3cm}
+    \centering
+     {\Large \textsc{Supervisors : }}\\  
+      {\href{mailto:michel.barret@centralesupelec.fr}{Michel Barret}  - \href{mailto:matthieu.bloch@ece.gatech.edu}{Matthieu Bloch} - \href{mailto:damien.rontani@centralesupelec.fr}{Damien Rontani} } \\
+     \vspace{2em}
+     	{\large \textsc{Authors : }}\\
+        {\Large \@author} \\
+        \vspace{4em}
+        {\Large \@date} }\\
+  \end{titlepage}
+ 
+ 
+\makeatother
+
+\tableofcontents
+%% \listoffigures
+
+%% \newpage
+%% \listoftables
+
+
+
+%%%%%%%%%%%%%%%
+
+\newpage
+\bibliographystyle{ieeetr} % plain : no order -- ieeetr : sorted
+\nocite{*}    % print all references
+\bibliography{reference/ref}
+
+\end{document}

@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{bruna2013invariant}
+J.~Bruna and S.~Mallat, ``Invariant scattering convolution networks,'' {\em
+  IEEE transactions on pattern analysis and machine intelligence}, vol.~35,
+  no.~8, pp.~1872--1886, 2013.
+
+\bibitem{zarka2019deep}
+J.~Zarka, L.~Thiry, T.~Angles, and S.~Mallat, ``Deep network classification by
+  scattering and homotopy dictionary learning,'' {\em arXiv preprint
+  arXiv:1910.03561}, 2019.
+
+\bibitem{lecun2015deep}
+Y.~LeCun, Y.~Bengio, and G.~Hinton, ``Deep learning,'' {\em nature}, vol.~521,
+  no.~7553, pp.~436--444, 2015.
+
+\end{thebibliography}
