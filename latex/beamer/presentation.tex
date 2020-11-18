@@ -112,20 +112,95 @@ Ecole CentraleSupélec \\ % Your institution for the title page
 %----------------------------------------------------------------------------------------
 
 %------------------------------------------------
-\section{Setting Up} 
+\section{18-11-2020} 
 %------------------------------------------------\input{../report/report.tex}
 
-\subsection{GitHub} 
+\subsection{Setting Up} 
 %------------------------------------------------
 
 %------------------------------------------------
 \begin{frame}
 \begin{itemize}
 	\item  \href{https://github.com/fellajimed/Deep-network-classification-by-scattering-and-homotopy-dictionary-learning}{public github repo}
+	
+	
+	\begin{itemize}
+    	\item papers;
+    	\item presentations 
+    	\item report pdf
+    \end{itemize}
+
 \end{itemize}
 \end{frame}
 %------------------------------------------------
 
+\subsection{introduction : Invariant Scattering Convolution Networks}
+
+%------------------------------------------------
+\begin{frame}
+\begin{itemize}
+    
+    \item Lipschitz continuity condition :
+    \begin{itemize}
+        \item determin if the transformation is stable to additive noise
+        \item there exists C $>$ 0 such that for all x and x' such that : 
+        \begin{equation}
+             \left\|\mathbf \Phi x' - \Phi x \right\| \leq C \left\|\mathbf x' - x \right\|
+        \end{equation}
+    \end{itemize}
+    
+    \item Lipschitz continuous to deformations :
+    \begin{itemize}
+        \item Lipschitz continuity relative to deformations is obtained if there exists C $>$ 0 such that for all $\tau$ and x:
+        \begin{equation}
+             \left\|\mathbf \Phi x_{\tau} - \Phi x \right\| \leq C \left\|\mathbf x \right\| \sup_{u} \lvert \nabla (\tau(u)) \rvert
+        \end{equation}
+    \end{itemize}
+
+
+	
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}
+\begin{itemize}
+	\item  wavelet transform vs Fourier transform :
+	\begin{itemize}
+	    \item wavelets are stable to deformations (+) but they are translation covariant (-)
+	    \item Fourier sinusoidal waves are not stable to deformations (-) but they are translation invariant (+)
+	\end{itemize}
+
+\end{itemize}
+\end{frame}
+%------------------------------------------------
+
+%------------------------------------------------
+\begin{frame}
+\begin{itemize}
+    
+    \item Notation
+    \begin{itemize}
+        \item G : group of rotations \textbf{r} of angles $2k\pi/K$ for $0 \leq k \leq K$
+        \item Two-dimensional directional wavelets are obtained by rotating a single band-pass filter $\psi$ by $r \in G$ and dilating it by $2^{j}$ for $j \in \mathbb{Z}$.
+        \begin{equation}
+            \psi_{\lambda}(u) = 2^{-2j} \psi(2^{-j}r^{-1}u) \; with \; \lambda = 2^{-j}r
+        \end{equation}
+    \end{itemize}
+
+	\item A wavelet transform commutes with translations, and is therefore not translation invariant.
+	\begin{itemize}
+	    \item Solution : introduce nonlinearity : Q 
+	    \begin{equation}
+	        Qx = M(x*\psi_{\lambda})
+	    \end{equation}
+	    \item The operator M should commute with the action of any diffeomorphism
+	\end{itemize}
+
+\end{itemize}
+\end{frame}
+%------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 
